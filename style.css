@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Añadimos esta línea para ocupar el 100% del viewport height */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.contenedor-uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff ;
+    height: 60vh;
+    width: 60vh;
+    margin: auto 0; /* Centrar verticalmente */
+    border-top-left-radius: 5px; /* Radio en la esquina superior izquierda */
+    border-bottom-left-radius: 5px; /* Radio en la esquina inferior izquierda */
+    border-bottom-right-radius: 0; /* No se aplica radio en la esquina inferior derecha */
+    border-top-right-radius: 0; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), /* Sombra inferior */
+    0px -5px 10px rgba(0, 0, 0, 0.1), /* Sombra superior */
+    5px 0px 10px rgba(0, 0, 0, 0), /* Sombra derecha */
+    -5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra izquierda */
+}
+
+.contenedor-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #fb456d ;
+    height: 60vh;
+    width: 60vh;
+    margin: auto 0; /* Centrar verticalmente */
+    border-top-left-radius: 0; /* Radio en la esquina superior izquierda */
+    border-bottom-left-radius: 0; /* Radio en la esquina inferior izquierda */
+    border-bottom-right-radius: 5px; /* No se aplica radio en la esquina inferior derecha */
+    border-top-right-radius: 5px;   
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), /* Sombra inferior */
+    0px -5px 10px rgba(0, 0, 0, 0.1), /* Sombra superior */
+    5px 0px 10px rgba(0, 0, 0, 0), /* Sombra derecha */
+    -5px 0px 10px rgba(0, 0, 0, 0); /* Sombra izquierda */
+}
+
+.contenedor-aux{
+    padding: 11%;
+}
+
+.txt-basal{
+    color: rgb(0, 0, 0);
+}
+
+.txt-formula{
+    color: rgb(25, 153, 153);
+}
+
+.txt-calculo{
+    color: #ffffff;
+    text-align:center;
+}
+
+.txt-dos{
+    color: #ffffff;
+    text-align:center;
+}
+
+.contenedor-btnCalcular{
+    margin-top: 10px;
+}
+
+.btn-calcular{
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    color: white;
+    background-color:#fb456d;
+    border: none; /* Eliminar el borde */
+    box-shadow: 0;
+
+}
+
+.input-kilos{
+    height: 25px;
+    width: 200px;
+    border: none; /* Eliminar el borde */
+    background-color: #c7cacd70;
+    
+}
