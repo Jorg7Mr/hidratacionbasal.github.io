@@ -2,7 +2,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    height: 100vh; /* Añadimos esta línea para ocupar el 100% del viewport height */
+    height: 100vh; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -15,15 +15,15 @@ body{
     background-color: #ffffff ;
     height: 60vh;
     width: 60vh;
-    margin: auto 0; /* Centrar verticalmente */
-    border-top-left-radius: 5px; /* Radio en la esquina superior izquierda */
-    border-bottom-left-radius: 5px; /* Radio en la esquina inferior izquierda */
-    border-bottom-right-radius: 0; /* No se aplica radio en la esquina inferior derecha */
+    margin: auto 0;
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 0; 
     border-top-right-radius: 0; 
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), /* Sombra inferior */
-    0px -5px 10px rgba(0, 0, 0, 0.1), /* Sombra superior */
-    5px 0px 10px rgba(0, 0, 0, 0), /* Sombra derecha */
-    -5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra izquierda */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4),
+    0px -5px 10px rgba(0, 0, 0, 0.1), 
+    5px 0px 10px rgba(0, 0, 0, 0), 
+    -5px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .contenedor-dos {
@@ -31,18 +31,18 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:  #fb456d ;
+    background-color:  #07187c86 ;
     height: 60vh;
     width: 60vh;
-    margin: auto 0; /* Centrar verticalmente */
-    border-top-left-radius: 0; /* Radio en la esquina superior izquierda */
-    border-bottom-left-radius: 0; /* Radio en la esquina inferior izquierda */
-    border-bottom-right-radius: 5px; /* No se aplica radio en la esquina inferior derecha */
+    margin: auto 0; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 5px; 
     border-top-right-radius: 5px;   
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), /* Sombra inferior */
-    0px -5px 10px rgba(0, 0, 0, 0.1), /* Sombra superior */
-    5px 0px 10px rgba(0, 0, 0, 0), /* Sombra derecha */
-    -5px 0px 10px rgba(0, 0, 0, 0); /* Sombra izquierda */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), 
+    0px -5px 10px rgba(0, 0, 0, 0.1), 
+    5px 0px 10px rgba(0, 0, 0, 0),
+    -5px 0px 10px rgba(0, 0, 0, 0); 
 }
 
 .contenedor-aux{
@@ -54,7 +54,7 @@ body{
 }
 
 .txt-formula{
-    color: rgb(25, 153, 153);
+    color: #07187c;
 }
 
 .txt-calculo{
@@ -76,8 +76,8 @@ body{
     height: 30px;
     width: 120px;
     color: white;
-    background-color:#fb456d;
-    border: none; /* Eliminar el borde */
+    background-color:#07187c;
+    border: none;
     box-shadow: 0;
 
 }
@@ -85,7 +85,33 @@ body{
 .input-kilos{
     height: 25px;
     width: 200px;
-    border: none; /* Eliminar el borde */
+    border: none; 
     background-color: #c7cacd70;
     
 }
+
+#error{
+    display: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    animation: desvanecer 2s ease-in-out;
+}
+
+@keyframes desvanecer {
+    0%{
+        transform:translateY(-100%);
+        opacity: 1;
+    }
+    50%{
+        transform:translateY(50%);
+        opacity: 1;
+
+    }   
+    100%{
+        transform:translateY(-100%);
+        opacity: 1;
+    } 
+
+}
+
